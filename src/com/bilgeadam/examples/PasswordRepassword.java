@@ -6,7 +6,7 @@ public class PasswordRepassword {
 	// kullanýcýnýn önce passrod repassword(constant) verileri alsýn ayný veri mi
 	// deðilmi
 	
-	private static final String Sercan123 = null;
+	private static final String Sercan = null;
 	
 	public static void main(String[] args) {
 		Scanner Input = new Scanner(System.in);
