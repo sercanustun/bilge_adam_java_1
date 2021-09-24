@@ -6,8 +6,8 @@ public class BAUtills {
 	private static Scanner scan = new Scanner(System.in);
 	
 	public static void footen() {
-		System.out.println("\tProgramý Kullan dýðýnýz Ýçin Teþekkürler");
-		System.out.println("\t\tTekrar Görüþmek Üzere");
+		System.out.println("\tProgramï¿½ Kullan dï¿½ï¿½ï¿½nï¿½z ï¿½ï¿½in Teï¿½ekkï¿½rler");
+		System.out.println("\t\tTekrar Gï¿½rï¿½ï¿½mek ï¿½zere");
 		
 	}
 	
@@ -28,10 +28,12 @@ public class BAUtills {
 		
 	}
 	
-	private static void showQuery(String please, String query, int numElements) {
-		showQuery(start + " " + numElements + " " + query);
+	private static String showQuery(String please, String query, int numElements) {
+		
+		String start = null;
+		showQuery(start + " " + numElements + " " + query, start, numElements);
 		String retVal = null;
-		showQuery(query);
+		showQuery(query, retVal, numElements);
 		
 		Scanner scanner = new Scanner(System.in);
 		retVal = scan.nextLine();
@@ -39,11 +41,9 @@ public class BAUtills {
 		return retVal;
 	}
 	
-	}
-	
 	public static String readString(String query) {
 		String retVal = null;
-		showQuery(query);
+		showQuery(query, retVal, 0);
 		
 		Scanner scanner = new Scanner(System.in);
 		retVal = scan.nextLine();
@@ -53,7 +53,7 @@ public class BAUtills {
 	
 	public static int readInt(String query) {
 		int retVal = -1;
-		showQuery(query);
+		showQuery(query, query, retVal);
 		
 		Scanner scan = new Scanner(System.in);
 		retVal = scan.nextInt();
@@ -63,7 +63,7 @@ public class BAUtills {
 	
 	public static double readDouble(String query) {
 		double retVal = -1;
-		showQuery(query);
+		showQuery(query, query, 0);
 		Scanner scanner = new Scanner(System.in);
 		retVal = scan.nextDouble();
 		return retVal;
@@ -71,5 +71,15 @@ public class BAUtills {
 	
 	public static void closeResource() {
 		scan.close();
-	}public static
+	}
+	
+	public static boolean proceeeding(String question, String positiveAnswer) {
+		boolean retVal = true;
+		String answer = readString(question);
+		retVal = answer.equalsIgnoreCase(positiveAnswer);
+		
+		return retVal;
+		
+	}
+	
 }

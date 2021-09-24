@@ -5,14 +5,14 @@ public class BilgeAdamUtilitiesTest {
 	
 	{
 		BAUtills.header("Oldu Mu?");
-		String str = BAUtills.readString("Lütfen Bir Deðer Giriniz");
+		// String str = BAUtills.readString("Lï¿½tfen Bir Deï¿½er Giriniz");
 		
-		System.out.println("Okunan Deðer" + str);
-		int j = BAUtills.readInt("Lütfen Bir Tamsayý Giriniz");
-		System.out.println("Okunan Deðer" + j);
-		double d = BAUtills.readDouble("Lütfen Bir Virgüllü Giriniz");
-		System.out.println("Okunan Deðer" + d);
-		int[] ints = BAUtills.readInt("Lütfen", " bir tam sayý giriniz", 10);
+		// System.out.println("Okunan Deï¿½er" + str);
+		// int j = BAUtills.readInt("Lï¿½tfen Bir Tamsayï¿½ Giriniz");
+		// System.out.println("Okunan Deï¿½er" + j);
+		// double d = BAUtills.readDouble("Lï¿½tfen Bir Virgï¿½llï¿½ Giriniz");
+		// System.out.println("Okunan Deï¿½er" + d);
+		// int[] ints = BAUtills.readInt("Lï¿½tfen", " bir tam sayï¿½ giriniz", 10);
 		
 		BAUtills.footen();
 		
