@@ -27,7 +27,7 @@ public class BAUtils {
 		System.err.println("\t\t" + row + "\n");
 	}
 	
-	public static String readString(String query) {
+	public static int readString(String query) {
 		showQuery(query);
 		String retVal = scan.nextLine();
 		return retVal;
