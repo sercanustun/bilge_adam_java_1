@@ -1,33 +1,10 @@
-package com.bilgeadam.boost.java.course01.lesson16;
+package Odev;
 
 import java.util.Random;
 import java.util.Scanner;
 
-// dizinin elemanısını kullanıcı girecek
-// 1 ile kullanıcının vermiş olduğu sayı aralığında sayıları random olarak
-// gelsin
-// rastgele gelen sayıları dizilere atayacak.
-// 4 5 6 98 5
-
-// Eklenen bütün sayıları göstersin
-// toplamlarını ?
-// ortalaması ?
-// bu sayılardan kaç tane çift var ?
-// kaç tane tek sayı ?
-// dizinin ilk elemanı nedir ?
-// dizinin son elemanı nedir ?
-
-// tek sayıları bir diziye atayalım
-// çift sayıları bir diziye atayalım
-
-// rastgele sayılardan hangileri asaldır ?
-// rastgele sayılardan en küçüğünün faktöriyel ?
-
-// ana Method static olsun ancak diğer metotlar static olmasın ?
-
-public class OrnekOrtalama {
+public class SingleArrayOdev {
 	
-	// dizinin eleman sayısı
 	public static int numberOfElement() {
 		Scanner klavye = new Scanner(System.in);
 		System.out.println("Lütfen dizinin eleman sayısı");
@@ -35,7 +12,6 @@ public class OrnekOrtalama {
 		return number;
 	}
 	
-	// rastgele için üst sayı giriniz
 	public static int topNumber() {
 		Scanner klavye = new Scanner(System.in);
 		System.out.println("Lütfen rastgele sayı için üst indisi giriniz.");
@@ -43,12 +19,10 @@ public class OrnekOrtalama {
 		return number;
 	}
 	
-	// random sayılar
 	public static int[] randomArray() {
-		// tek boyutlu dizi eleman sayısı
+		
 		int[] dizi = new int[numberOfElement()];
 		
-		// rastgele sayılar
 		Random randomNumber = new Random();
 		int topIndis = topNumber();
 		int number;
@@ -61,20 +35,11 @@ public class OrnekOrtalama {
 		
 	}
 	
-	// Eklenen bütün sayıları göstersin
-	// toplamlarını ?
-	// ortalaması ?
-	// bu sayılardan kaç tane çift var ?
-	// kaç tane tek sayı ?
-	// dizinin ilk elemanı nedir ?
-	// dizinin son elemanı nedir ?
-	
 	public static void allElementArray() {
-		// toplam
+		
 		int toplam = 0, tekSayilar = 0, ciftSayilar = 0;
 		double ortalama = 0.0;
 		
-		// iterative =indis sayısı bize lazımsa
 		int[] dizi = randomArray();
 		for (int i = 0; i < dizi.length; i++) {
 			System.out.print(dizi[i] + " ");
@@ -96,12 +61,6 @@ public class OrnekOrtalama {
 		System.out.println(tekDizi);
 		
 	}
-	
-	// tek sayıları bir diziye atayalım
-	// çift sayıları bir diziye atayalım
-	
-	// rastgele sayılardan hangileri asaldır ?
-	// rastgele sayılardan en küçüğünün faktöriyel ?
 	
 	public static void main(String[] args) {
 		allElementArray();
