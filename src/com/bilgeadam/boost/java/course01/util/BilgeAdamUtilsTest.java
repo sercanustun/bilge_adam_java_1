@@ -3,7 +3,7 @@ package com.bilgeadam.boost.java.course01.util;
 public class BilgeAdamUtilsTest {
 	
 	public static void main(String[] args) {
-		
+		// gün.ay.yıl
 		System.out.println(BAUtils.dateAsString(Long.parseLong("1632646800")));
 		System.out.println(BAUtils.timeAsString(Long.parseLong("1632646800")));
 		System.out.println("Enlem / Boylam Sorgusu : " + BAUtils.getDirectData("Edremit", "Balıkesir", "TR"));
