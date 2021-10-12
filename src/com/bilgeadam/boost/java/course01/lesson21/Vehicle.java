@@ -1,21 +1,22 @@
 package com.bilgeadam.boost.java.course01.lesson21;
 
-public class Vehicle {
+public abstract class Vehicle {
 	protected String name;
 	protected String brand;
 	protected double mass;
-	protected String color;
+	protected Color color;
 	protected double maxSpeed;
 	protected double currSpeed;
 	
-	public Vehicle(String name, String brand, double maxSpeed) {
-		this.name = name;
+	public Vehicle(String brand, double maxSpeed) {
 		this.brand = brand;
 		this.maxSpeed = maxSpeed;
+		this.mass = 0.0d;
+		this.color = Color.NO_COLOR;
+		this.currSpeed = 0.0d;
 	}
 	
-	public Vehicle(String name, String brand, double maxSpeed, double mass, String color) {
-		this.name = name;
+	public Vehicle(String brand, double maxSpeed, double mass, Color color) {
 		this.brand = brand;
 		this.maxSpeed = maxSpeed;
 		this.mass = mass;
@@ -23,21 +24,9 @@ public class Vehicle {
 		this.currSpeed = 0.0;
 	}
 	
-	public double getCurrSpeed() {
-		return currSpeed;
-	}
+	public abstract void setName();
 	
-	public void setCurrSpeed(double currSpeed) {
-		this.currSpeed = currSpeed;
-	}
-	
-	public void setMass(double mass) {
-		this.mass = mass;
-	}
-	
-	public void setColor(String color) {
-		this.color = color;
-	}
+	public abstract void move(int accelaration);
 	
 	public String getName() {
 		return name;
@@ -51,7 +40,7 @@ public class Vehicle {
 		return mass;
 	}
 	
-	public String getColor() {
+	public Color getColor() {
 		return color;
 	}
 	
@@ -59,14 +48,27 @@ public class Vehicle {
 		return maxSpeed;
 	}
 	
-	public double getcurrSpeed() {
+	public double getCurrSpeed() {
 		return currSpeed;
+	}
+	
+	public void setMass(double mass) {
+		this.mass = mass;
+	}
+	
+	public void setColor(Color color) {
+		this.color = color;
+	}
+	
+	public void setCurrSpeed(double currSpeed) {
+		this.currSpeed = currSpeed;
 	}
 	
 	@Override
 	public String toString() {
-		return "Vehicle [name=" + name + ", brand=" + brand + ", mass=" + mass + ", color=" + color + ", maxSpeed="
-				+ maxSpeed + ", currSpeed=" + currSpeed + "]";
+		return "Vehicle [getName()=" + getName() + ", getBrand()=" + getBrand() + ", getMass()=" + getMass()
+				+ ", getColor()=" + getColor() + ", getMaxSpeed()=" + getMaxSpeed() + ", getCurrSpeed()="
+				+ getCurrSpeed() + "]";
 	}
 	
 }

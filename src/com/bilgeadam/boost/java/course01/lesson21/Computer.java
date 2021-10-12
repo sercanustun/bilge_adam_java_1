@@ -1,7 +1,9 @@
 package com.bilgeadam.boost.java.course01.lesson21;
 
-// kalıtım :
-// bütün bilgisayarlardaki ortak özellikler
+// kalıtım:
+// bütün bilgisayardaki ortak özellikler.
+// javada extends kaç tane yazabilirsiniz. ?
+// single inheritance (1 tane extends yazılır).
 public class Computer {
 	
 	// özellikler
@@ -11,10 +13,11 @@ public class Computer {
 	
 	// parametresiz constructor
 	public Computer() {
+		
 	}
-	// parametreli constructor
-	// shift + alt + s
 	
+	// parametreli constructor
+	// Shift+Alt+S
 	public Computer(String computerName, String computerSerialNumber, String computerMainCart) {
 		this.computerName = computerName;
 		this.computerSerialNumber = computerSerialNumber;
@@ -22,19 +25,19 @@ public class Computer {
 	}
 	
 	// toString
-	// shift + alt + s
+	// Shift+Alt+S
 	@Override
 	public String toString() {
-		return "Coumputer [computerName=" + computerName + ", computerSerialNumber=" + computerSerialNumber
+		return "Computer [computerName=" + computerName + ", computerSerialNumber=" + computerSerialNumber
 				+ ", computerMainCart=" + computerMainCart + "]";
 	}
 	
 	// method
 	public void deneme() {
-		System.out.println(this.computerSerialNumber.concat("XLS"));
+		System.out.println(this.computerSerialNumber.concat(" .XLS"));
 	}
-	// getter and setter
 	
+	// getter and setter
 	public String getComputerName() {
 		return computerName;
 	}

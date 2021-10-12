@@ -7,15 +7,51 @@ import java.net.URL;
 import java.time.LocalDateTime;
 import java.time.ZoneOffset;
 import java.time.format.DateTimeFormatter;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.HashMap;
 import java.util.Scanner;
 
 public class BAUtils {
+	private static final int ArrayList = 0;
 	private static Scanner scan = new Scanner(System.in);
 	
 	public static void footer() {
 		System.out.println("\n\n\tProgramı kullandığınız için teşekkürler");
 		System.out.println("\t\tTekrar görüşmek üzere");
 		closeResources();
+	}
+	
+	public static int menu(HashMap<Integer, String> menuItems) {
+		boolean correctAnswer = false;
+		int selection = -1;
+		do {
+			showMenuItems(menuItems);
+			selection = getUserSelection();
+			correctAnswer = evelueteAnswer(menuItems, selection);
+		} while (!correctAnswer);
+		return selection;
+		
+	}
+	
+	private static boolean evelueteAnswer(HashMap<Integer, String> menuItems, int selection) {
+		
+		return menuItems.containsKey(selection);
+	}
+	
+	private static int getUserSelection() {
+		return readInt(" Lütfen Seçiminizi Yapınız");
+	}
+	
+	private static void showMenuItems(HashMap<Integer, String> menuItems) {
+		
+		ArrayList<Integer> keys = new ArrayList<Integer>(menuItems.keySet());
+		Collections.sort(keys);
+		for (Integer key : keys) {
+			System.out.println("\t" + key + ")......" + menuItems.get(key).trim());
+		}
+		System.out.println();
+		
 	}
 	
 	public static void header(String title) {

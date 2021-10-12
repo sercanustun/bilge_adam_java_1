@@ -1,28 +1,32 @@
 package com.bilgeadam.boost.java.course01.lesson21;
 
 public class InheritanceMainClass {
+	
 	public static void main(String[] args) {
-		msiComputer msiComputer = new msiComputer();
-		msiComputer.setComputerMainCart("msi main card");
+		MsiComputer msiComputer = new MsiComputer();
 		msiComputer.setComputerName("Msi");
+		msiComputer.setComputerMainCart("msi main cart");
 		System.out.println(msiComputer);
-		msiComputer.deneme();
+		msiComputer.deneme(); // polymorphism
 		
-		System.out.println("/////////////////////////");
+		System.out.println("///////////////////////////////////////////////");
 		
-		asusComputer asusComputer = new asusComputer();
-		asusComputer.setComputerMainCart("asus main card");
+		AsusComputer asusComputer = new AsusComputer();
 		asusComputer.setComputerName("asus");
+		asusComputer.setComputerMainCart("asus main cart");
 		System.out.println(asusComputer);
-		asusComputer.deneme();
-		System.out.println("/////////////////////////");
+		asusComputer.deneme();// polymorphism
 		
-		monsterComputer monsterComputer = new monsterComputer();
-		monsterComputer.setComputerMainCart("monster main card");
+		System.out.println("///////////////////////////////////////////////");
+		
+		MonsterComputer monsterComputer = new MonsterComputer();
 		monsterComputer.setComputerName("monster");
+		monsterComputer.setComputerMainCart("monster main cart");
 		System.out.println(monsterComputer);
-		monsterComputer.deneme();
-		System.out.println("/////////////////////////");
+		monsterComputer.deneme();// polymorphism
+		
+		System.out.println("///////////////////////////////////////////////");
 		
 	}
+	
 }
