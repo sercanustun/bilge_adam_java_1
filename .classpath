@@ -7,5 +7,7 @@
 	</classpathentry>
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="src" path="/BilgeAdam"/>
+	<classpathentry kind="lib" path="README.md"/>
+	<classpathentry kind="lib" path="lombok.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

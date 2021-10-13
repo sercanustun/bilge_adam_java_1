@@ -73,10 +73,13 @@ public class DateCalendarTutorialsEas {
 		
 	}
 	
-	// Saati Bilmiyoruz 4 hakkımız var saat kaç
+	// Saati Bilmiyoruz 15 hakkımız var saat kaç
 	// eğer yüksek söylersek sayınızı küçültün
 	// eğer az söylersek sayınızı yükseltin
-	
+	// validation : hata kontrollerinin öncedentahmin etmek ve ona göre önlem almak.
+	// 1-23
+	// pozitif
+	// karakter girmemesi gerekiyor
 	public static void getClockGame() {
 		
 		try {
