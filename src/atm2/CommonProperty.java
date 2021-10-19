@@ -9,6 +9,7 @@ package atm2;
 
 import java.util.Date;
 
+// Genel özelliklerimiz
 public class CommonProperty {
 	
 	// özellikler
@@ -44,10 +45,6 @@ public class CommonProperty {
 	
 	public Date getDate() {
 		return date;
-	}
-	
-	public void setDate(Date date) {
-		this.date = date;
 	}
 	
 }

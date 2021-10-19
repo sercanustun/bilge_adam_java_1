@@ -43,7 +43,6 @@ public class KuslarGenelOzellik extends GenelOzellikler implements IOmurgali {
 				+ hareket + "]";
 	}
 	
-	73
 	// getterandsetter
 	public String getYumurta() {
 		return yumurta;

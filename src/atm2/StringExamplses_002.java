@@ -2,7 +2,7 @@ package atm2;
 
 import java.util.Scanner;
 
-import com.bilgeadam.util.SabitVeri;
+import com.bilgeadam.examples.SabitVeri;
 
 public class StringExamplses_002 {
 	public static void main(String[] args) {
