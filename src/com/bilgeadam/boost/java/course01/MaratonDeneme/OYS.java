@@ -208,8 +208,10 @@ public class OYS {
 	}
 	
 	private void workerList() {
-		
+		System.out.println(w1);
 		System.out.println(w2);
+		System.out.println(w3);
+		System.out.println(w4);
 		
 	}
 	
