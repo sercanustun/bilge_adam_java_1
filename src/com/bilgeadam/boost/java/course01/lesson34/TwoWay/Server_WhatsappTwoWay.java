@@ -15,9 +15,10 @@ public class Server_WhatsappTwoWay {
 	public static void main(String[] args) throws IOException {
 		String recieveMessage;
 		String sendMessage;
-		Date logsDate = new Date();
+		
 		ServerSocket serverSocket = new ServerSocket(StaticPort.PORT);
-		System.out.println(Person.id + " " + Person.name + " " + Person.surname + " " + logsDate + "==>ÇEVRİM İÇİ<==");
+		System.out
+				.println(Person.id + " " + Person.name + " " + Person.surname + " " + new Date() + "==>ÇEVRİM İÇİ<==");
 		Socket socket = serverSocket.accept();
 		
 		BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
@@ -29,8 +30,8 @@ public class Server_WhatsappTwoWay {
 		
 		while (true) {
 			if ((recieveMessage = recieveRead.readLine()) != null) {
-				System.out.println(
-						Person.id2 + " " + Person.name2 + " " + Person.surname2 + " " + logsDate + recieveMessage);
+				System.out.println(Person.id2 + " " + Person.name2 + " " + Person.surname2 + " " + new Date() + " : "
+						+ recieveMessage);
 			}
 			sendMessage = bufferedReader.readLine();
 			printWriter.println(sendMessage);

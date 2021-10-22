@@ -1,3 +1,4 @@
+0
 package Bireysel;
 
 import java.io.BufferedReader;

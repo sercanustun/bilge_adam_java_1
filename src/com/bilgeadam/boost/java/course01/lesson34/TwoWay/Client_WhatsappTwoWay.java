@@ -23,7 +23,7 @@ public class Client_WhatsappTwoWay {
 		InputStream inputStream = socket.getInputStream();
 		BufferedReader bufferedReader2 = new BufferedReader(new InputStreamReader(inputStream));
 		System.out.println(
-				Person.id2 + " " + Person.name2 + " " + Person.surname2 + " " + logsDate + " Merhaba nasılsın ?");
+				Person.id2 + " " + Person.name2 + " " + Person.surname2 + " " + new Date() + " Merhaba nasılsın ?");
 		while (true) {
 			
 			sendMessage = bufferedReader.readLine();
@@ -31,8 +31,8 @@ public class Client_WhatsappTwoWay {
 			printWriter.flush();
 			
 			if ((recieveMessage = bufferedReader2.readLine()) != null) {
-				System.out.println(
-						Person.id + " " + Person.name + " " + Person.surname + " " + logsDate + recieveMessage);
+				System.out.println(Person.id + " " + Person.name + " " + Person.surname + " " + new Date() + " : "
+						+ recieveMessage);
 				
 			}
 		}
