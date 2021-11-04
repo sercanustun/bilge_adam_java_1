@@ -9,5 +9,6 @@
 	<classpathentry kind="lib" path="src/alombokkutuphanesi/lombok.jar"/>
 	<classpathentry kind="lib" path="src/Odev/io.jar"/>
 	<classpathentry kind="lib" path="src/com/bilgeadam/boost/java/course01/lesson30/Maraton.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/JAVA_BOOST"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
