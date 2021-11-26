@@ -51,7 +51,7 @@ public class CategoryName2Employee {
 		String select = "SELECT DISTINCT firstname, lastname "
 				+ "FROM categories a, products p, order_details c, orders b, employees d "
 				+ "WHERE a.categoryid=p.categoryid AND " + "p.productid=c.productid AND "
-				+ "c.orderid=b.orderid AND b.employeeid=d.employeeid " + "AND a.categoryid=? " + "ORDER BY firstname;";
+				+ "c.orderid=b.orderid AND b.employeeid=d.employeeid " + "AND a.categoryid=? ";
 		
 		try (PreparedStatement pStmt = con.prepareStatement(select);) {
 			pStmt.setInt(1, id);
