@@ -1,4 +1,4 @@
-package com.bilgeadam.boost.java.course01.factory;
+package com.bilgeadam.boost.java.course01.factory.computerfactory;
 
 public interface Computeable {
 	int getRAMSize();

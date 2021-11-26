@@ -1,23 +1,23 @@
-package com.bilgeadam.boost.java.course01.factory;
+package com.bilgeadam.boost.java.course01.factory.computerfactory;
 
-public class PC implements Computeable {
+public class Laptop implements Computeable {
 	
 	@Override
 	public int getRAMSize() {
 		// TODO Auto-generated method stub
-		return 32;
+		return 8;
 	}
 	
 	@Override
 	public int getCPUSpeed() {
 		// TODO Auto-generated method stub
-		return 2500;
+		return 1800;
 	}
 	
 	@Override
 	public int getDiskSize() {
 		// TODO Auto-generated method stub
-		return 1000;
+		return 500;
 	}
 	
 }
