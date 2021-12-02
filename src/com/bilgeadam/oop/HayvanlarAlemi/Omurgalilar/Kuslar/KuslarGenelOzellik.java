@@ -52,4 +52,16 @@ public class KuslarGenelOzellik extends GenelOzellikler implements IOmurgali {
 		this.yumurta = yumurta;
 	}
 	
+	@Override
+	public void sicakKanli() {
+		// TODO Auto-generated method stub
+		
+	}
+	
+	@Override
+	public void kapaliDolasim() {
+		// TODO Auto-generated method stub
+		
+	}
+	
 }
